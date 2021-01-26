@@ -72,12 +72,27 @@ document.querySelector('#lowerTrees').onclick = () => {
 document.querySelector('#anyTree').onclick = () => {
     let Prompt = prompt("What tree are you looking for?");
 
-    switch(Prompt) {
-        case 'oak' :
-        case 'oak' :
-            trees.filter(Trees => Trees = 'oak')
-            listTrees();
-        break;
+    // switch(Prompt) {
+    //     case 'oak' :
+    //     case 'Oak' :
+    //         alert("Oak");
+    //     break;
+    //     case 'pine' :
+    //     case 'Pine' :
+    //         alert("Pine");
+    //     break;
+    //     case 'aspen' :
+    //     case 'Aspen' :
+    //         alert("Aspen");
+    //     break;
+    //     case 'Bald Cypress' :
+    //     case 'bald cypress' :
+    //     case 'Bald cypress' :
+    //     case 'bald Cypress' :
+    //         alert("Bald Cypress");
+    //     break;
+    //     default :
+    //         alert(`You don't have ${Prompt}.`)
 
     }
 
@@ -93,6 +108,10 @@ document.querySelector('#showName3').onclick = () => {
 
     console.log(trees.find(is3));
 
+    let Is3Element = document.createElement("p");
+    Is3Element.textContent = trees.find(is3);
+
+    alert(trees.find(is3));
 
     listTrees();
 }
