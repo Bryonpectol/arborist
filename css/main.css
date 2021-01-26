@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -32,7 +33,7 @@ main {
 article {
     display: flex;
     flex-direction: column;
-    
+    margin-top: 2vh;
 }
 
 aside {

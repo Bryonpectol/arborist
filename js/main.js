@@ -64,8 +64,10 @@ document.querySelector('#sortTrees').onclick = () => {
 }
 
 document.querySelector('#lowerTrees').onclick = () => {
-    trees.join('|').toLowerCase().split('|');
-    console.log(trees);
+    for (let i = 0; i < trees.length; i++) {
+        trees[i] = trees[i].toLowerCase();
+       }
+
     listTrees();
 }
 
@@ -129,10 +131,12 @@ document.querySelector('#showName4').onclick = () => {
 
     if(trees.length >= 4) {
 
+    errorElement.textContent = "";
     alert(trees.find(is4));
+    
 
     } else {
-        errorElement.textContent = "There is no 4th tree... Come on!"
+        errorElement.textContent = "There is no 4th tree... Come on!";
     }
 
     listTrees();
