@@ -93,7 +93,6 @@ document.querySelector('#showName3').onclick = () => {
 
     console.log(trees.find(is3));
 
-    let 
 
     listTrees();
 }
