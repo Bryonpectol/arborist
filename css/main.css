@@ -5,4 +5,74 @@
 
 header {
     background: url("/media/tree.jpg");
+    background-position-y: center;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-left: 8%;
+}
+
+.h1head {
+    color: white;
+    padding: 5vh 0vh 2vh 5vh;
+    font-size: 3em;
+}
+
+.h2head {
+    color: white;
+    padding: 0vh 0vh 0vh 5vh;
+}
+
+main {
+    margin-left: 8%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+aside {
+    margin-left: 60%;
+    position: fixed;
+}
+
+h2 {
+    margin-top: 5vh;
+}
+
+.learnedul {
+    margin-top: 2vh;
+}
+
+.lilearned {
+    margin-left: 2%;
+}
+
+button {
+    width: 35vh;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+span {
+    color: red;
+}
+
+hr {
+    width: 50vh;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: orange;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 1vh;
 }
