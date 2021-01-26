@@ -70,7 +70,7 @@ document.querySelector('#lowerTrees').onclick = () => {
 }
 
 document.querySelector('#anyTree').onclick = () => {
-    let Prompt = prompt("What tree are you looking for?");
+    let Prompt = prompt("What tree do you want to add?");
 
     // switch(Prompt) {
     //     case 'oak' :
@@ -94,7 +94,11 @@ document.querySelector('#anyTree').onclick = () => {
     //     default :
     //         alert(`You don't have ${Prompt}.`)
 
-    }
+    // }
+
+    trees.push(Prompt);
+
+    listTrees();
 
 }
 
@@ -117,6 +121,19 @@ document.querySelector('#showName3').onclick = () => {
 }
 
 document.querySelector('#showName4').onclick = () => {
-    trees.sort();
+    function is4(num4) {
+        return num4 === trees[3]
+    }
+
+    trees.find(is4);
+
+    if(trees.length >= 4) {
+
+    alert(trees.find(is4));
+
+    } else {
+        errorElement.textContent = "There is no 4th tree... Come on!"
+    }
+
     listTrees();
 }
